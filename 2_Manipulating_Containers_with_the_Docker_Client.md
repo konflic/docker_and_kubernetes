@@ -39,3 +39,5 @@ If the particular command is not included in the container it will show an error
 
 #### 3) Container lifecycle
 ```docker run``` = ```docker create``` + ```docker start```
+
+```docker start -a <container-id>``` - means to catch and show the output from the container 
