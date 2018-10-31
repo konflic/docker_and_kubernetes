@@ -41,3 +41,6 @@ If the particular command is not included in the container it will show an error
 ```docker run``` = ```docker create``` + ```docker start```
 
 ```docker start -a <container-id>``` - means to catch and show the output from the container 
+
+#### 4) Restarting containers
+If started earlier container was exited and started again with ```docker start -a <ID>``` command, the command for the container cannot be edited. 
