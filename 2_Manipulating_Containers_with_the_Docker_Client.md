@@ -46,10 +46,12 @@ If the particular command is not included in the container it will show an error
 If started earlier container was exited and started again with ```docker start -a <ID>``` command, the command for the container cannot be edited. 
 
 #### 5) Clearing containers
-```docker system prune
+```
+docker system prune
 WARNING! This will remove:
         - all stopped containers
         - all networks not used by at least one container
         - all dangling images
         - all build cache
-Are you sure you want to continue? [y/N]```
+Are you sure you want to continue? [y/N]
+```
