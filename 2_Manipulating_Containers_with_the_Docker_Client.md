@@ -79,7 +79,7 @@ This will not run the container, but get logs from it.
 hi there
 ```
 
-#### 6) Kill/Stop docker container (stop or kill)
+#### 6) Kill vs. Stop docker container
 
 In order to get right now running containers use ```docker ps```
 
