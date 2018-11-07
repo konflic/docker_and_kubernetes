@@ -78,3 +78,11 @@ This will not run the container, but get logs from it.
 > sudo docker logs 9d8e7bf88b01b426d08869ad86af6a0d5270dd0092e0243fc5d8f9a23dc2aee4
 hi there
 ```
+
+#### 6) Kill/Stop docker container (stop or kill)
+
+In order to get right now running containers use ```docker ps```
+
+If you ```docker stop <container-id>``` it will send signal to stop the current process with time to do a clean up, or wrapping or whatever script may need to stop correctly.
+
+If you ```docker kill <container-id>``` it will stop the container right now, without any other actions.
