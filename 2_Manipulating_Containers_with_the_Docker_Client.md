@@ -100,3 +100,5 @@ Example with redis:
 > exec -it 15d70ee865b4 redis-cli
 127.0.0.1:6379> 
 ```
+
+```-it``` => ```-i -t``` where -i tells to connecto to STDIN of the given process, -t tells to display the output on the screen.
