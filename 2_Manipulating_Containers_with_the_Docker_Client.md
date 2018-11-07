@@ -86,3 +86,17 @@ In order to get right now running containers use ```docker ps```
 If you ```docker stop <container-id>``` it will send signal to stop the current process with time to do a clean up, or wrapping or whatever script may need to stop correctly.
 
 If you ```docker kill <container-id>``` it will stop the container right now, without any other actions.
+
+#### 6) Execute scripts within container
+
+If we need to run some command within a container, we should use exec -it <container-id> <command>
+
+Example with redis:
+```bash
+> docker create redis
+15d70ee865b4b7ca18311870234b8db4eacde0b543564cd32a78642ec876d5aa
+> doccker start 15d70ee865b4b7ca18311870234b8db4eacde0b543564cd32a78642ec876d5aa
+15d70ee865b4b7ca18311870234b8db4eacde0b543564cd32a78642ec876d5aa
+> exec -it 15d70ee865b4 redis-cli // Выполняем команду внутри контейнера
+127.0.0.1:6379> 
+```
