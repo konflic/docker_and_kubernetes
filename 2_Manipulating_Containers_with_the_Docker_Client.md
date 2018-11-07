@@ -101,4 +101,4 @@ Example with redis:
 127.0.0.1:6379> 
 ```
 
-```-it``` => ```-i -t``` where -i tells to connecto to STDIN of the given process, -t tells to display the output on the screen.
+```-it``` => ```-i -t``` where ```-i``` tells to connecto to STDIN of the given process, ```-t``` tells to display the output on the screen.
