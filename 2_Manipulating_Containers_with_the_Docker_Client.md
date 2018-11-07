@@ -87,7 +87,7 @@ If you ```docker stop <container-id>``` it will send signal to stop the current 
 
 If you ```docker kill <container-id>``` it will stop the container right now, without any other actions.
 
-#### 6) Execute scripts within container
+#### 7) Execute scripts within container
 
 If we need to run some command within a container, we should use exec -it <container-id> <command>
 
