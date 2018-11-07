@@ -102,3 +102,5 @@ Example with redis:
 ```
 
 ```-it``` => ```-i -t``` where ```-i``` tells to connecto to STDIN of the given process, ```-t``` tells to display the output on the screen.
+
+```docker exec -it <container-id> sh``` - **run shell within docker container**
