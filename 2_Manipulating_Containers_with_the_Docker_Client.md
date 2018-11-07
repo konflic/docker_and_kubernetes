@@ -97,6 +97,6 @@ Example with redis:
 15d70ee865b4b7ca18311870234b8db4eacde0b543564cd32a78642ec876d5aa
 > doccker start 15d70ee865b4b7ca18311870234b8db4eacde0b543564cd32a78642ec876d5aa
 15d70ee865b4b7ca18311870234b8db4eacde0b543564cd32a78642ec876d5aa
-> exec -it 15d70ee865b4 redis-cli // Выполняем команду внутри контейнера
+> exec -it 15d70ee865b4 redis-cli
 127.0.0.1:6379> 
 ```
