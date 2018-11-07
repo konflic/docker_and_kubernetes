@@ -63,3 +63,17 @@ WARNING! This will remove:
         - all build cache
 Are you sure you want to continue? [y/N]
 ```
+
+#### 6) Getting the logs from shutted down container
+
+In order to get logs from started earlier and shut down container use **logs** command with container id.
+This will not run the container, but get the logs from it.
+
+```bash
+> sudo docker create busybox echo hi there
+9d8e7bf88b01b426d08869ad86af6a0d5270dd0092e0243fc5d8f9a23dc2aee4
+> sudo docker start 9d8e7bf88b01b426d08869ad86af6a0d5270dd0092e0243fc5d8f9a23dc2aee4
+9d8e7bf88b01b426d08869ad86af6a0d5270dd0092e0243fc5d8f9a23dc2aee4
+> sudo docker logs 9d8e7bf88b01b426d08869ad86af6a0d5270dd0092e0243fc5d8f9a23dc2aee4
+hi there
+```
