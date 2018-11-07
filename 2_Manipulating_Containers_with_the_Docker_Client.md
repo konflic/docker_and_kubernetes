@@ -89,7 +89,7 @@ If you ```docker kill <container-id>``` it will stop the container right now, wi
 
 #### 7) Execute scripts within container
 
-If we need to run some command within a container, we should use exec -it <container-id> <command>
+If we need to run some command within a container, we should use ``` docker exec -it <container-id> <command>```
 
 Example with redis:
 ```bash
