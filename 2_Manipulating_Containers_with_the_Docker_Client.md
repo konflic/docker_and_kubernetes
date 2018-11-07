@@ -67,7 +67,8 @@ Are you sure you want to continue? [y/N]
 #### 6) Getting the logs from shutted down container
 
 In order to get logs from started earlier and shut down container use **logs** command with container id.
-This will not run the container, but get the logs from it.
+
+This will not run the container, but get logs from it.
 
 ```bash
 > sudo docker create busybox echo hi there
