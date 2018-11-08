@@ -4,10 +4,10 @@ This section includes notes from the third module, concernind custom docker imag
 
 [Back to contents](/README.md)
 
-1) Creating and using Dockerfile.
+#### 1) Creating and using Dockerfile.
 
 In order to create a container you should:
-- Create a Docker file
+- Create a Dockerfile (Only with this name **without extension!**)
 - Fill it with instructions. For example: 
 ```Dockerfile
 # Use and existing docker image
