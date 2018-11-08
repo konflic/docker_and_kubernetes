@@ -1,6 +1,6 @@
 # Manipulating Containers with the Docker Client
 
-This section includes notes from the secon module.
+This section includes notes from the second module.
 
 [Back to contents](/README.md)
 
