@@ -37,5 +37,17 @@ Step 2/3 : RUN apk add --update redis
 Step 3/3 : CMD ["redis-server"]
 ...
 Successfully built 43c796baca98
+```
 
+#### 2) Custom tag for docker image
+
+1) Create Docker file
+2) cd to the root folder
+3) Execute in console:
+```
+docker build -t samuraii/pyvo:latest .
+```
+4) Run (create+start) the image by tag:
+```
+docker run samuraii/pyvo:latest
 ```
