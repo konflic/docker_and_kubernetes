@@ -49,5 +49,5 @@ docker build -t samuraii/pyvo:latest .
 ```
 4) Run (create+start) the image by tag:
 ```
-docker run samuraii/pyvo:latest
+docker run samuraii/pyvo[:latest] - if you add no : that the latest version will be used by default
 ```
