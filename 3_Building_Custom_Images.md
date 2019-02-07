@@ -70,7 +70,7 @@ index.js
 
 And you need to run this app with ```npm install``` and ```npm start```. So your dockerfile should look like this:
 
-```bash
+```Dockerfile
 # Specify base
 FROM node:alpine
 
