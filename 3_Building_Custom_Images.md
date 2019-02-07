@@ -77,11 +77,14 @@ FROM node:alpine
 # Specify working dir for our files
 WORKDIR /usr/app
 
-# Copy build context
-COPY ./ ./
+# Copy build context for dependencies
+COPY ./package.json ./
 
 # Install deps
 RUN npm install
+
+# Copy all other files
+COPY ./ ./
 
 # Default command
 CMD ["npm", "start"]
