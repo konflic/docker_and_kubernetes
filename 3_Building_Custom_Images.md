@@ -86,7 +86,7 @@ CMD ["npm", "start"]
 
 #### 4 Port mapping
 
-By default there is no port mapping from container to the outside. To map ports use:
+By default there is no port mapping from container to the outside. To map ports use: -p [local_port]:[container_port]
 ```
 sudo docker run -p 8080:8080 samuraii/pyvo
 ```
