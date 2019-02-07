@@ -74,6 +74,9 @@ And you need to run this app with ```npm install``` and ```npm start```. So your
 # Specify base
 FROM node:alpine
 
+# Specify working dir for our files
+WORKDIR /usr/app
+
 # Copy build context
 COPY ./ ./
 
