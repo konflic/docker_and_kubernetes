@@ -106,6 +106,6 @@ Example with redis:
 ```-it``` => ```-i -t``` where ```-i``` tells to connecto to STDIN of the given process, ```-t``` tells to display the output on the screen.
 
 
-```docker exec -it <container-id> sh``` - **run shell within docker container**
+```docker exec -it <container-id> sh``` - **OPEN shell within RUNNING docker container**
 
-```sudo docker run -it samurai/pyvo sh``` -> **return interactive shell within container**
+```sudo docker run -it samurai/pyvo sh``` -> **RUN container and OPEN shell within container**
