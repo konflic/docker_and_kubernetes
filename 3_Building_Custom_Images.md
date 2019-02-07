@@ -41,6 +41,8 @@ Successfully built 43c796baca98
 
 #### 2) Custom tag for docker image
 
+In order not to use only id to access the image, use -t flag to customize the name for your build
+
 1) Create Docker file
 2) cd to the root folder
 3) Execute in console:
@@ -50,4 +52,34 @@ docker build -t samuraii/pyvo:latest .
 4) Run (create+start) the image by tag:
 ```
 docker run samuraii/pyvo[:latest] - if you add no : that the latest version will be used by default
+```
+
+#### 3) Copy build context
+
+Docker container does not know anything about the environment and stuff around. In order to move files inside the container use COPY command.
+
+For example you want to run a node js app and have following structure:
+
+```
+.
+..
+Dockerfile
+package.json
+index.js
+```
+
+And you need to run this app with ```npm install``` and ```npm start```. So your dockerfile should look like this:
+
+```docker
+# Specify base
+FROM node:alpine
+
+# Copy build context
+COPY ./ ./
+
+# Install deps
+RUN npm install
+
+# Default command
+CMD ["npm", "start"]
 ```
