@@ -4,7 +4,7 @@ This section includes notes from the third module, concernind custom docker imag
 
 [Back to contents](/README.md)
 
-#### 1) Creating and using Dockerfile.
+### 1) Creating and using Dockerfile.
 
 In order to create a container you should:
 - Create a Dockerfile (Only with this name **without extension!**)
@@ -39,7 +39,7 @@ Step 3/3 : CMD ["redis-server"]
 Successfully built 43c796baca98
 ```
 
-#### 2) Custom tag for docker image
+### 2) Custom tag for docker image
 
 In order not to use only id to access the image, use -t flag to customize the name for your build
 
@@ -54,7 +54,7 @@ docker build -t samuraii/pyvo:latest .
 docker run samuraii/pyvo[:latest] - if you add no : that the latest version will be used by default
 ```
 
-#### 3) Copy build context
+### 3) Copy build context
 
 Docker container does not know anything about the environment and stuff around. In order to move files inside the container use COPY command.
 
@@ -90,7 +90,7 @@ COPY ./ ./
 CMD ["npm", "start"]
 ```
 
-#### 4 Port mapping
+### 4 Port mapping
 
 By default there is no port mapping from container to the outside. To map ports use: -p [local_port]:[container_port]
 ```
