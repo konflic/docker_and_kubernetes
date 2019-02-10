@@ -96,3 +96,9 @@ By default there is no port mapping from container to the outside. To map ports 
 ```
 sudo docker run -p 8080:8080 samuraii/pyvo
 ```
+
+### 5 Build custom Dockerfile
+
+```
+docker build -f Dockerfile.custom
+```
