@@ -22,10 +22,16 @@ services:
 
 This docker-compose.yml file specifies that we want to run two services. One is made of a *redis* image and another should be build of the Dockerfile found inside the same directory. Also we bind ports from container 8081 to local 4001  
 
-To build and run this compose file use:
+To run this compose file use:
 
 ```
 docker-compose up
+```
+
+If you have made changes in configuration or files you'll need to *rebuild* and run this compose file use:
+
+```
+docker-compose up --build
 ```
 
 If you want to run container in background use:
