@@ -24,6 +24,8 @@ This docker-compose.yml file specifies that we want to run two services. One is 
 
 To build and run this compose file use:
 
-```docker-compose up```
+```
+docker-compose up
+```
 
 [Back to contents](/README.md)
