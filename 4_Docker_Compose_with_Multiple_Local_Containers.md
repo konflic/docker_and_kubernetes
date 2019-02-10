@@ -46,4 +46,28 @@ In oeder to stop all containers use:
 docker-compose down
 ```
 
+### 2) Restart policy for containers
+
+```yml
+version: '3'
+
+services:
+    redis-server:
+        image: 'redis'
+    node-app:
+        restart: always
+        build: .
+        ports:
+            - "4001:8081"
+```
+
+Another options for restart are:
+
+```
+restart: "no"
+restart: always
+restart: on-failure
+restart: unless-stopped
+```
+
 [Back to contents](/README.md)
