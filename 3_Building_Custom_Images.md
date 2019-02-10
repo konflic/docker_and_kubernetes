@@ -100,5 +100,7 @@ sudo docker run -p 8080:8080 samuraii/pyvo
 ### 5 Build custom Dockerfile
 
 ```
-docker build -f Dockerfile.custom
+docker build -f Dockerfile.custom .
 ```
+
+[Back to contents](/README.md)
