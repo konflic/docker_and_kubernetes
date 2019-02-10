@@ -28,4 +28,16 @@ To build and run this compose file use:
 docker-compose up
 ```
 
+If you want to run container in background use:
+
+```
+docker-compose up -d
+```
+
+In oeder to stop all containers use:
+
+```
+docker-compose down
+```
+
 [Back to contents](/README.md)
