@@ -20,4 +20,6 @@ services:
             - "4001:8081"
 ```
 
+This docker-compose.yml file specifies that we want to run two services. One is made of a *redis* image and another should be build of the Dockerfile found inside the same directory. Also we bind ports from container 8081 to local 4001  
+
 [Back to contents](/README.md)
