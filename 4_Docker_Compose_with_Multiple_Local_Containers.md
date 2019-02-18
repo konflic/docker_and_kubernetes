@@ -70,4 +70,14 @@ restart: on-failure
 restart: unless-stopped
 ```
 
+### 3) Monitor changes on the fly
+
+If we need to monitor the changes of files on the fly, we should use:
+
+```
+docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app/ <container-id>
+```
+
+Here the node_modules folder does not exist in the source folders, without it there will be an error as the node_modules folder will be overwritten by mapping ```-v $(pwd):/app/```
+
 [Back to contents](/README.md)
