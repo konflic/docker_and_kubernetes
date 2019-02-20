@@ -96,7 +96,7 @@ services:
       - .:/app # link files in the root folder to the files in the /app folder
 ```
 
-The dockerfile.dev is the following:
+The Dockerfile.dev is the following:
 
 ```Dockerfile
 FROM node:alpine
