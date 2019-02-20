@@ -80,4 +80,20 @@ docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app/ <container-id>
 
 Here the node_modules folder does not exist in the source folders, without it there will be an error as the node_modules folder will be overwritten by mapping ```-v $(pwd):/app/```
 
+### 4) Wrapping react app project in docker-compose.yml
+
+```yml
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - /app/node_modules
+      - .:/app
+```
+
 [Back to contents](/README.md)
