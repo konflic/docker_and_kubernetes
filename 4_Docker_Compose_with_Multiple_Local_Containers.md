@@ -85,7 +85,7 @@ Here the node_modules folder does not exist in the source folders, without it th
 ```yml
 version: '3'
 services:
-  web:
+  web: // the name of the container
     build:
       context: .
       dockerfile: Dockerfile.dev
