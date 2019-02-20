@@ -111,4 +111,8 @@ COPY . . # we actually don't need this as we link files, but it is better to use
 CMD ["npm", "run", "start"]
 ```
 
+### 5) How to execute sests
+
+Easy: ```docker run -it 296c9c15bd38 npm run test```
+
 [Back to contents](/README.md)
