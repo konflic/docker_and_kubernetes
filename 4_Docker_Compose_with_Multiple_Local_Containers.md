@@ -87,13 +87,28 @@ version: '3'
 services:
   web: # the name of the container
     build:
-      context: .
-      dockerfile: Dockerfile.dev
+      context: . # the root directory is the same as docker-compose location
+      dockerfile: Dockerfile.dev # Dockerfile with custom name
     ports:
-      - "3000:3000"
-    volumes:
-      - /app/node_modules
-      - .:/app
+      - "3000:3000" # link the ports of the container
+    volumes: 
+      - /app/node_modules # just use the node_modules and do not track its cahnges
+      - .:/app # link files in the root folder to the files in the /app folder
+```
+
+The dockerfile.dev is the following:
+
+```Dockerfile
+FROM node:alpine
+
+WORKDIR '/app'
+
+COPY package.json .
+RUN npm install
+
+COPY . . # we actually don't need this as we link files, but it is better to use this line if well deply it to the production environment for example, just not to forget it.
+
+CMD ["npm", "run", "start"]
 ```
 
 [Back to contents](/README.md)
