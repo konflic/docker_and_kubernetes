@@ -114,14 +114,17 @@ CMD ["npm", "run", "start"]
 ### 5) How to execute sests
 
 The *first* way is:
+
 Easy: ```docker run -it 296c9c15bd38 npm run test```, but this does not allow us to update tests automatically.
 
 The *second* way is:
+
 1) run ```docker-compose up```
 2) find the container id with ```docker ps```
 3) use in separate terminal ```sudo exec -it <container-id> npm run test```
 
 The *third* way:
+
 We need to add a separate container to services in docker-compose.yml file
 ```yml
 version: '3'
