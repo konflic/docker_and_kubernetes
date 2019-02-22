@@ -148,4 +148,22 @@ services:
     command: ["npm", "run", "test"]
 ```
 
+### How to crete prod ready build with nginx
+
+As in our application we only care about the /build folder, we need to serve those with nginx. In order create th efollowing Dockerfile within the same directory:
+
+```Dockerfile
+FROM node:apline as builder
+WORKDIR '/app'
+COPY package.json .
+RUN npm install
+COPY . .
+RUN npm run build
+
+FROM nginx
+COPY --from=builder /app/build /usr/share/nginx/html
+```
+
+We create a build directory with the builder phase, after that we use this folder with nginx container. Nginx container is started for us by default.
+
 [Back to contents](/README.md)
