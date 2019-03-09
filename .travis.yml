@@ -7,4 +7,4 @@ before_install:
     - docker build -t imagename/docker-react  -f thirdapp/Dockerfile.dev thirdapp/
 
 script:
-    - docker run imagename/docker-react npn run test -- --coverage
+    - docker run imagename/docker-react npm run test -- --coverage
