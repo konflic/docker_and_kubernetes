@@ -111,7 +111,7 @@ COPY . . # we actually don't need this as we link files, but it is better to use
 CMD ["npm", "run", "start"]
 ```
 
-### 5) How to execute sests
+### 5) How to execute tests
 
 The **first** way is:
 
