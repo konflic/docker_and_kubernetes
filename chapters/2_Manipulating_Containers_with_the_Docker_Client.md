@@ -42,7 +42,7 @@ If the particular command is not included in the container it will show an error
 
 ```docker start -a <container-id>``` - means to catch and show the output from the container
 
-```-a``` flag is telling system to output everython into terminal.
+```-a``` flag is telling system to output everything into terminal.
 
 #### 4) Restarting containers
 If started earlier container was exited and started again with ```docker start -a <ID>``` command, the command for the container cannot be edited. 
